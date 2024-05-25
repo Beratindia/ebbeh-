@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #008080;
+}
+
+#ini {
+  position: absolute;
+    width: 500px;
+    height: 80px;
+    left: 55px;
+    bottom: 500px;
+    text-align: center;
+}
+#box{
+  position: absolute;
+  background-color: #FFE6E6;
+  height: 600px;
+  width: 500px;
+  left: 56px;
+  bottom: 4px;
+}
+#flower1{
+  position: absolute;
+  background-color: #FF0080;
+  height: 70px;
+  width: 70px;
+  top: 0px;
+  left: -20px;
+  border-radius: 80% 0 80% 0 ;
+  transform: rotate(280deg);
+  box-shadow: 0 0 15px 2px #FF5580;
+    animation: glow infinite;
+    -webkit-animation: glow 2 infinite;
+}
+#flower2{
+  position: absolute;
+  background-color: #FF0080;
+  height: 70px;
+  width: 70px;
+  top: 10px;
+  left: -30px;
+  border-radius: 80% 0 80% 0 ;
+  transform: rotate(75deg);
+  box-shadow: 0 0 15px 2px #FF5580;
+    animation: glow infinite;
+    -webkit-animation: glow 2 infinite;
+}
+#flower3{
+  position: absolute;
+  background-color: #FF0080;
+  height: 70px;
+  width: 70px;
+  top: 0px;
+  left: 455px;
+  border-radius: 80% 0 80% 0 ;
+  transform: rotate(350deg);
+  box-shadow: 0 0 15px 2px #FF5580;
+    animation: glow infinite;
+    -webkit-animation: glow 2 infinite;
+}
+#flower4{
+  position: absolute;
+  background-color: #FF0080;
+  height: 70px;
+  width: 70px;
+  top: 15px;
+  left: 470px;
+  border-radius: 80% 0 80% 0 ;
+  transform: rotate(15deg);
+  box-shadow: 0 0 15px 2px #FF5580;
+    animation: glow infinite;
+    -webkit-animation: glow 2 infinite;
+}
+.button {
+  position: relative;
+  background-color: #B784B7;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: pink;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+@keyframes glow{
+  50%{
+      box-shadow: 0 0 2px 0 rgb(251, 178,0,0.6);
+      top: -20.5px;
+
+  }
+}
+@-webkit-keyframes glow{
+  50%{
+      box-shadow: 0 0 2px 0 rgb(251, 178, 0,0.9);
+      top: -20.5px;
+  }
+}
+.fa {
+  position: absolute;
+  padding: 14px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  left: 150px;
+  top: 135px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-spotify {
+  background: #1DB954;
+  color: white;
+}
+
+.wrapper{
+  width: 320px;
+  background: #c3c3c3;
+}
+.wrapper h1{
+  text-align: center;
+}
+.input-box input{
+  background-color: #818181;
+  text-decoration-color: black;
+
+}
+.input-box input::placeholder{
+  color: black;
+}
+.wrapper .btn {
+  text-decoration-color:black;
+}
